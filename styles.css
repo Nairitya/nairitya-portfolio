@@ -88,7 +88,6 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap-reverse;
-  gap: 2px;
 }
 .hero-title {
   font-size: 4rem;
@@ -107,7 +106,6 @@ body {
 }
 
 .hero-image-container {
-  flex-basis: 500px;
   width: 50%;
 }
 .hero-image-container > img {
@@ -115,7 +113,6 @@ body {
 }
 .hero-text {
   width: 50%;
-  flex-shrink: 200px;
 }
 .container-green {
   background-color: var(--primary-color);
