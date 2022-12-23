@@ -68,24 +68,61 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Nairitya Chourey - Portfolio</title>
   </head>
+
   <body>
-    <nav id="navbar">
-      <div class="brand-container">NAIRITYA</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blogs</a></li>
-      </ul>
-      <div class="contact-links">
-        <a href="https://github.com/Nairitya"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/nairityachourey/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <button>Resume <i class="fa-solid fa-file-arrow-down"></i></button>
+    <header>
+      <nav id="navbar">
+        <div class="brand-container">NAIRITYA</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+        <div class="contact-links">
+          <a href="https://github.com/Nairitya" target="_blank"
+            ><i class="fa-brands fa-github fa-xl"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/nairityachourey/" target="_blank"
+            ><i class="fa-brands fa-linkedin fa-xl"></i
+          ></a>
+          <a href="">
+            <button class="button-secondary">Download Resume</button></a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="hero-container horizontal-whitespace container">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="heading-small">HELLO, I'M A</span><br />
+          <span class="color-primary">Web Developer</span>
+        </h1>
+        <p class="hero-description">
+          Hi, I am Nairitya Chourey, a passionate Web Developer. Building Good
+          Experiences for users is what I like the most.
+        </p>
       </div>
-    </nav>
+      <div class="hero-image-container">
+        <img src="./images/hero-image.svg" alt="" />
+      </div>
+    </main>
+    <section class="project-section horizontal-whitespace container-green">
+      <h2>
+        <small class="small-h2">MY</small><br /><span class="text-white"
+          >Projects</span
+        >
+      </h2>
+      <div class="grid"></div>
+    </section>
+    <section class="skill-section horizontal-whitespace">
+      <h2 class="invert-text">
+        <small class="small-h2">MY</small><br /><span class="text-green"
+          >Skill Stack</span
+        >
+      </h2>
+      <div class="project-container"></div>
+    </section>
     <script
       src="https://kit.fontawesome.com/7cb3247ae7.js"
       crossorigin="anonymous"

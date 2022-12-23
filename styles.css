@@ -6,20 +6,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #fac722;
+  --primary-color: #2bd984;
+  --dark-color: #010a13;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  color: var(--dark-color);
+  font-size: 16px;
+  position: relative;
+}
+.container {
+  margin-bottom: 100px;
+}
+.color-primary {
+  color: var(--primary-color);
+}
+
+.button-secondary {
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  background-color: #fff;
+  border: 3px solid var(--primary-color);
+  border-radius: 4px;
+  font-weight: 400;
+}
+.button-secondary:hover {
+  box-shadow: 3px 3px 4px 2px #f7f3e7;
+  font-weight: 500;
+  cursor: pointer;
 }
 #navbar {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 50px;
+  flex-wrap: wrap;
+  padding: 25px 5%;
+
+  z-index: 1;
 }
 .brand-container::before {
   font-weight: bold;
   color: #fff;
   content: "N.";
-  background-color: #fac722;
+  background-color: var(--primary-color);
   border-radius: 0 4px 4px 4px;
   padding: 5px;
   margin-right: 5px;
@@ -31,12 +68,68 @@ body {
 .nav-links {
   display: flex;
   justify-content: space-between;
-  width: 250px;
 }
 .nav-links > li {
-  display: inline;
+  display: inline-block;
+  padding: 0 10%;
 }
 .nav-links li a {
   text-decoration: none;
-  color: black;
+}
+
+.contact-links a {
+  padding-left: 1vw;
+  color: var(--primary-color);
+}
+
+/* HERO SECTION */
+.hero-container {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 2px;
+}
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 24px;
+}
+.heading-small {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.hero-description {
+  font-size: 1.5rem;
+}
+.horizontal-whitespace {
+  padding: 25px 20%;
+}
+
+.hero-image-container {
+  flex-basis: 500px;
+  width: 50%;
+}
+.hero-image-container > img {
+  width: 100%;
+}
+.hero-text {
+  width: 50%;
+  flex-shrink: 200px;
+}
+.container-green {
+  background-color: var(--primary-color);
+}
+.text-white {
+  color: #fff;
+}
+.text-green {
+  color: var(--primary-color);
+}
+h2 {
+  font-size: 2rem;
+}
+.small-h2 {
+  font-size: 1.5rem;
+  color: var(--dark-color);
 }
