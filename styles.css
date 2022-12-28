@@ -8,7 +8,7 @@
 }
 :root {
   --primary-color: #fac722;
-  --primary-color: #2bd984;
+  --primary-color: rgb(43, 217, 132);
   --dark-color: #010a13;
 }
 
@@ -49,7 +49,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 25px 5%;
-
   z-index: 1;
 }
 .brand-container::before {
@@ -67,11 +66,13 @@ body {
 }
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
+  width: 20vw;
   justify-content: space-between;
 }
 .nav-links > li {
   display: inline-block;
-  padding: 0 10%;
+  padding: 0 10px;
 }
 .nav-links li a {
   text-decoration: none;
@@ -129,4 +130,18 @@ h2 {
 .small-h2 {
   font-size: 1.5rem;
   color: var(--dark-color);
+}
+.contact-links > a {
+  display: inline-block;
+}
+@media screen and (max-width: 1000px) {
+  .hero-container {
+    flex-direction: column-reverse;
+  }
+  .hero-text,
+  .hero-image-container {
+    width: 100%;
+  }
+  .horizontal-whitespace {
+  }
 }
